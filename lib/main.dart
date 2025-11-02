@@ -82,7 +82,7 @@ class _FormatterPageState extends State<FormatterPage> {
     });
 
     try {
-      var uri = Uri.parse('https://docxoptimzer-backend.onrender.com');
+      var uri = Uri.parse('https://docxoptimzer-backend.onrender.com/process');
       var request = http.MultipartRequest('POST', uri);
 
       request.fields['top_margin'] = _topMarginController.text;
